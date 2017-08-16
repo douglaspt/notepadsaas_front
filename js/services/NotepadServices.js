@@ -4,7 +4,7 @@ app.factory('notepadServices', ['$http', 'locationServices', function($http, loc
             $http({
                 method:'GET',
                 //url: 'https://notepadsaas.herokuapp.com/nota'
-                url: 'https://douglasnotepad.herokuapp.com/nota'
+                url: 'https://douglasnotepad.herokuapp.com/nota/'
                 
             }).then(function (data) {
                 if (callback) callback(data)
@@ -25,7 +25,7 @@ app.factory('notepadServices', ['$http', 'locationServices', function($http, loc
             $http({
                 method:'POST',
                 //url:'https://notepadsaas.herokuapp.com/nota',
-                url:'https://douglasnotepad.herokuapp.com/nota',
+                url:'https://douglasnotepad.herokuapp.com/nota/',
                 data:JSON.stringify(nota)
             }).then(function (data) {
                 if (callback) callback(data)
